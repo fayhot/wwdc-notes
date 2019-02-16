@@ -1,7 +1,10 @@
+# WWDC, 2013~2018
 
-# WWDC, 2013~2016
+Notes on sessions of Apple's World Wide Developer Conference.
 
-## WWDC reform in 2015
+
+
+## WWDC structural reform in 2015
 
 As you may find, since 2015 WWDC sessions has been grouped into 8, rather than previously 7. As below.
 
@@ -18,12 +21,12 @@ Group|Rationale
 
 ## Year-by-year Comparison
 
-As you dive into each group, some HTMl file may be found for year-by-year comparison. In each group, topics are classified too.
+As you dive into each group, some HTML file may be found for year-by-year comparison. In each group, topics are classified too.
 
 Print in A3 papers for better legibility.
 
 ## Session Notes.
 
-Augmented notes with framework reference links and section timing.
+Augmented notes with (1) framework reference links, (2)section timing, and (3) page number in slides
 
 More past HTML will be transferred in.
