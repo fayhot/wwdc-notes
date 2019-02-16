@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2016-719-optimizing-io</title>
+</head>
+
+<body>
+<p><a href="https://developer.apple.com/videos/play/wwdc2016/719/">2016-719 Optimizing I/O for Performance and Battery Life</a><br>
+</p>
+<h2>@Kushal</h2>
+<p> </p>
+<p>I/O Philosophy (4 pillars)</p>
+<ul>
+  <li>Reduce I/O</li>
+  <li>User the right thread</li>
+  <li>Adopt Appropriate APIs</li>
+  <li>Test and measure</li>
+</ul>
+ 
+<p>Caching – access pattern - NSCache</p>
+<p>Coalescing I/O </p>
+<p> </p>
+<h2>Intro Example  [8]</h2>
+ 
+<p>DispatchSource.timer</p>
+<p> </p>
+<p>Source.scheduleOneshot(</p>
+<p> </p>
+<h2>@Terry [13] Thread</h2>
+<p> </p>
+<p>Main thread: user input + user interface.</p>
+<p> </p>
+<p>Problem of busy main thread // spins / unresponsive UI / animation stutter?</p>
+ 
+<p>Timer Profiler</p>
+ 
+<h2>QoS [?23~]</h2>
+<p> </p>
+<p>Visibility , - to user ?</p>
+<p>important  - that block other tasks?</p>
+<p>Expectation of how long to run ?</p>
+<p> </p>
+<p>2 ways to specify QoS</p>
+<p> </p>
+<p>queue.async(qos: .backgorund) // NSOperation.qualityOfService =</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<h2>Adopt Appropriate APIs [29]</h2>
+ 
+<p>Asset Catalogs [ new in iOS 10, lossy image compression]</p>
+ 
+<p>Core Data. @Kushal [36]</p>
+ 
+<p>Core Data Performance – Measure, measure, measure</p>
+ 
+<h2>Test and Measure [43]</h2>
+ 
+<p>Network conditioner</p>
+ 
+<p>Testing</p>
+<p>Multitasking / memory pressure / cache (reboot on iOS, purge on macOS)</p>
+ 
+<h2>Summary [46]</h2>
+ 
+<ul>
+  <li>I/O affects battery</li>
+  <li>Move work off the main thread</li>
+  <li>Specify proper quality of service</li>
+  <li>Switch to Asset Catalogs</li>
+  <li>Use Core Data</li>
+</ul>
+ 
+<p>The End [47]</p>
+</body>
+</html>

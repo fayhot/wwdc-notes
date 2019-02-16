@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2015-215-whats-new-in-storyboards</title>
+</head>
+
+<body>
+<p>2015-215-whats-new-in-storyboards</p>
+<p>TOC</p>
+<ul>
+  <li>Organizing Your Storyboards</li>
+  <li>Customizing Standard Segues</li>
+  <li>Unwind Segues and Custom Containers</li>
+</ul>
+<h2>Organizing Your Storyboards [2]</h2>
+<p>Demo [7]</p>
+<p>&nbsp;</p>
+<h2>Customizing Standard Segues [12:30]</h2>
+<p>Demo [20:20]</p>
+<h2>Unwind Segues and Custom Containers [26:40]</h2>
+<p>&nbsp;</p>
+<table width="100%" border="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1 Identify the destination</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>2 Find the destination </td>
+    <td>viewControllerForUnwindSegueAction(&quot;iAmTheJournal:&quot;, withSender: ...)</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><p>allowedChildViewControllersForUn</p>
+    <p>chil</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>3 Follow route</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><p>Incremental Unwinding</p>
+    <p>unwindForSegue</p></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>Demo [35:48]</p>
+<p>&nbsp;</p>
+<p>Summary [42]</p>
+<ul>
+  <li>Organize your storyboards using Storyboard References</li>
+  <li>Customize triggered and unwin segues by subclassing
+    <ul>
+      <li>Present Modally and Popover Presentation segues have extended lifetimes</li>
+    </ul>
+  </li>
+  <li>Unwind segues move backward through application flow
+    <ul>
+      <li>Support unwind segues in custom containers</li>
+      <li>Remove impl. of deprecated API to get new behavior</li>
+    </ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Note on Custom Containers (6518) </h2>
+<p>&nbsp;</p>
+<table width="100%" border="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>In Storyboard</td>
+    <td>set segue identifier of Embed Segue, instead of using IBOutlet to views</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>In Code, destination</td>
+    <td><p>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender { </p>
+      <p>if ([segue.identifier hasPrefix:@&quot;button&quot;]) { </p>
+      <p>GDC_UIView_TripPartItemWithFishtail *view = (GDC_UIView_TripPartItemWithFishtail *)segue.destinationViewController.view; </p>
+    <p>view.block = ^() { NSLog(@&quot;%@ touch began!!!!!&quot;, segue.identifier);</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p><br>
+</p>
+<p>/* #pragma mark - Navigation // In a storyboard-based application, you will often want to do a little preparation before navigation - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender { // Get the new view controller using [segue destinationViewController]. // Pass the selected object to the new view controller. } */</p>
+</body>
+</html>
