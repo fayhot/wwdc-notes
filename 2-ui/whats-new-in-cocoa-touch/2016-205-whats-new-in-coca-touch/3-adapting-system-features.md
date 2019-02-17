@@ -50,7 +50,7 @@ let sharingController = UICloudSharingController(share: share, container: self.c
 > [2016 ??? What’s New with CloudKit]()
 
 
-NSUserActivity
+NSUserActivity | 3615 |  
 
 - Capture the state of your application
 - Infrastructure for Handoff, Spotlight, ... 
