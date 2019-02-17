@@ -1,6 +1,7 @@
 
 # [2014 236 Building Interruptible and Responsive Interactions](https://developer.apple.com/videos/play/wwdc2014/236/)
 
+[Video]
 
 
 Transitions

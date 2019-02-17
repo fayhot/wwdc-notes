@@ -10,52 +10,14 @@ Six pro tips to make it magic
 - Ben Fearnley, iOS System Experience
 - Peter Hajas, iOS System Experience
 
-
-• External Display Support
-• Layout-Driven UI
-• Laser-Fast Launches|2030|p183
-• Smooth Scrolling
-• Continuing with Continuity
-• Debugging Like a Pro
-
-
-
-
-
-Handling Connectivity
-Is there an external display connected?
-
-```swift
-class var screens: [UIScreen]
-if UIScreen.screens.count > 1 {
-// External display is connected ...
-}
-```
-
-What happens when the display is connected or disconnected?
-
-- UIScreen.didConnectNotification
-- UIScreen.didDisconnectNotification
+Topic|Time|Page
+---|---|---
+[External Display Support](1-external-display-support.md) | p3
+[Layout-Driven UI](2-layout-driven-ui.md) | | p41
+[Laser-Fast Launches](3-laser-fast-launches.md)|2030|p84
+[Smooth Scrolling](4-smooth-scrolling.md)|2740|p110
+Continuing with Continuity | 3255 | p127
+Debugging Like a Pro | 3955 | p151
+The End| | 5121 | p183
 
 
-if let externalScreen = UIScreen.screens.last {
-    externalWindow = UIWindow()
-    externalWindow.screen = externalScreen
-    configureExternalWindow(externalWindow)
-    externalWindow.isHidden = false
-}
-
- 
-externalWindow.isHidden = true
-externalWindow = nil
-
-## Layout-Driven UI
-
-### Recipe for Layout-Driven UI
-
-- Find and track state that affects UI
-- Dirty layout when state changes with setNeedsLayout()
-- Update UI with state in layoutSubviews()
-
-
-   Layout Animations Gestures

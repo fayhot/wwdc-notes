@@ -1,8 +1,9 @@
-# 2014-202-whats-new-in-cocoa-touch
-By Luke Hiesterman
-[Video](https://developer.apple.com/videos/play/wwdc2014/202/)
+# [2014 201 What's New in Cocoa Touch](https://developer.apple.com/videos/play/wwdc2014/202/)
+
+- By Luke Hiesterman
 
 ## iOS 8 -> Adaptivity
+
 * Design philosophy . Reuse code.
 * Framework provision. Adaptive VC. - do that without device check.
 * Adaptive Presentations
@@ -31,7 +32,7 @@ Layout Margin (iOS 8)
 
 New margin NSLayoutAttributes  
 
-See 2016 216 Building Adaptive Apps with UIKit \[[Video](https://developer.apple.com/videos/play/wwdc2014/216/)\]
+See [2016 216 Building Adaptive Apps with UIKit](https://developer.apple.com/videos/play/wwdc2014/216/)
 
 
 ### Adaptive View Controllers [14]
