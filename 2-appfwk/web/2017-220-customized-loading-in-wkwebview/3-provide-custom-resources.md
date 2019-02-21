@@ -4,7 +4,6 @@
 [`WKURLSchemeHandler`](https://developer.apple.com/documentation/webkit/wkurlschemehandler)
 
 
-
 - Allows your app to handle resource loads for a URL scheme
   - Examples  
     - https://www.apple.com 
@@ -18,39 +17,51 @@
 
 ### Simple protocol you implement
 
+[`WKURLSchemeHandler`](https://developer.apple.com/documentation/webkit/wkurlschemehandler)
+
+
 
 ```swift 
 class MyCustomSchemeHandler : NSObject, WKURLSchemeHandler {
     func webView(_ webView: WKWebView, start urlSchemeTask: WKURLSchemeTask) { }
     func webView(_ webView: WKWebView, stop urlSchemeTask: WKURLSchemeTask) { } 
 }
+```
+
 
 
 ### Load something in your view that uses your scheme
 
 ```swift
 let configuration = WKWebViewConfiguration() configuration.setURLSchemeHandler(MyCustomSchemeHandler(), forURLScheme: “apple-local”)
-let webView = WKWebView(frame: getFrame(), configuration: configuration) webView.load(URLRequest(url: URL(string: “apple-local:top“)!))
+let webView = WKWebView(frame: getFrame(), configuration: configuration) 
+webView.load(URLRequest(url: URL(string: “apple-local:top“)!))
 ```
 
+[`WKURLSchemeTask`](https://developer.apple.com/documentation/webkit/wkurlschemetask)
 
 The WKURLSchemeTask sent to your handler represents a resource load
  
 ```swift
-protocol WKURLSchemeTask : NSObjectProtocol { var request: URLRequest
-func didReceive(_ response: URLResponse) func didReceive(_ data: Data)
-func didFinish()
-func didFailWithError(_ error: Error)
+protocol WKURLSchemeTask : NSObjectProtocol { 
+    var request: URLRequest
+    func didReceive(_ response: URLResponse)
+    func didReceive(_ data: Data)
+    func didFinish()
+    func didFailWithError(_ error: Error)
 }
 ```
 
 
 ### Deliver the resource data
 
-``` 
-func webView(_ webView: WKWebView, start urlSchemeTask: WKURLSchemeTask) { let resourceData = createHTMLResourceData()
-let response = ...
-urlSchemeTask.didReceive(response) urlSchemeTask.didReceive(resourceData) urlSchemeTask.didFinish()
+```swift
+func webView(_ webView: WKWebView, start urlSchemeTask: WKURLSchemeTask) { 
+    let resourceData = createHTMLResourceData()
+    let response = ...
+    urlSchemeTask.didReceive(response) 
+    urlSchemeTask.didReceive(resourceData) 
+    urlSchemeTask.didFinish()
 }
 ```
 
@@ -69,6 +80,9 @@ func webView(_ webView: WKWebView, start urlSchemeTask: WKURLSchemeTask) {
 
 
 ## Demo - Providing custom resources | Alex Christensen | | p78
+
+
+Using UIImagePickerController to allow user to choose the photo, in responding to .. `func webView(_ webView: WKWebView, start urlSchemeTask: WKURLSchemeTask)`
 
 
 ### Providing Custom Resources Demo

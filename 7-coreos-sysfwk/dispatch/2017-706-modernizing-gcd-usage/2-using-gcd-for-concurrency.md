@@ -1,5 +1,5 @@
 
-## [Using GCD for Concurrency](2-using-gcd-for-concurrency.md) | Daniel A. Steffen | 
+## [Using GCD for Concurrency](2-using-gcd-for-concurrency.md) | Daniel A. Steffen | 1725 | p79
 
 
 ```swift
@@ -24,9 +24,15 @@ source.activate()
 
 ### Target Queue Hierarchy
 
-Serial queues and sources can form a tree
+- Serial queues and sources can form a tree
+- Shared single mutual exclusion context
+- Independent individual queue order
 
 
+```swift
+let Q1 = DispatchQueue(label: "Q1", target : EQ)
+let Q2 = DispatchQueue(label: "Q2", target : EQ)
+```
 
 ### Quality of Service
 
@@ -35,12 +41,52 @@ Serial queues and sources can form a tree
 - Affects various execution properties
 
 
+### QoS and Target Queue Hierarchy
+
+
 ## Granularity of Concurrency | 2435 | p119
 
 
 
-Event Monitoring Setup
+### Event Monitoring Setup
 
 
 Network Connection - Dispatch Source - Dispatch Queue
 
+### Event Handling on Many Independent Queues
+
+
+
+### Single Mutual Exclusion Context | p132
+
+### Too Much of a Good Thing
+
+- Repeatedly waiting for exclusive access to contended resources
+- __Repeatedly switching between independent operations__
+- Repeatedly bouncing an operation between threads
+
+
+### Avoid Unbounded Concurrency -Repeatedly switching between independent operations 
+
+Many workitems submitted to global concurrent queue
+
+- If workitems block, more threads will be created
+- May lead to thread explosion
+
+
+### One Queue Hierarchy per Subsystem
+
+
+
+### Good Granularity of Concurrency
+
+- Fixed number of serial queue hierarchies
+- Coarse workitem granularity between hierarchies
+- Finer workitem granularity inside a hierarchy
+
+
+### Using GCD for Concurrency
+
+- Organize queues and sources into serial queue hierarchies 
+- Use a fixed number of serial queue hierarchies
+- Size your workitems appropriately

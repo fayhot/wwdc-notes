@@ -1,5 +1,5 @@
 
-## [Modernizing Existing Code](4-modernizing-existing-code.md) | | 4025 | p199
+## [Modernizing Existing Code](4-modernizing-existing-code.md) | Pierre Habouzit  | 4025 | p199
 
 
 No dispatch object mutation after activation 

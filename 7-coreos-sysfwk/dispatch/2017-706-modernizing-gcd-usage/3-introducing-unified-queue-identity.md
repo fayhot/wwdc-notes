@@ -1,6 +1,6 @@
 
 
-## [Introducing Unified Queue Identity](3-introducing-unified-queue-identity.md) | Pierre Habouzit, Core Darwin | 3040 | p154
+## [Introducing Unified Queue Identity](3-introducing-unified-queue-identity.md) | Pierre Habouzit | 3040 | p154
 
 3-introducing-unified-queue-identity.md
 

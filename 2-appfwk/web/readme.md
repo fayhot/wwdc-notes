@@ -1,10 +1,44 @@
+# WebKit and Safari
+
+
+## 2018
+
+
+### [2018 234 What’s New in Safari and WebKit](https://developer.apple.com/videos/play/wwdc2018/234/) | [Note](2018-234-whats-new-in-safari-and-webkit)
+
+### [2018 207 Strategies for Securing Web Content](https://developer.apple.com/videos/play/wwdc2018/207/)
+
+[2018 239 Designing Web Content for watchOS](https://developer.apple.com/videos/play/wwdc2018/239)
+
+
+
+## 2017
+
+
+### [2017 220 Customized Loading in WKWebView](https://developer.apple.com/videos/play/wwdc2017/220/) | [Note](2017-220-customized-loading-in-wkwebview)
+
+Manage cookies / Filter unwanted content / Provide custom resources
+
+### [2017 225 What's New in Safari View Controller](https://developer.apple.com/videos/play/wwdc2017/225) | [Note](2017-225-whats-new-in-safari-view-controller)
+
+
+
+## 2016
+
+
+### [2016 420 Optimizing Web Content in Your App]()
+
+
+
+## 2015
 
 
 [2015 501 What's New in Web Development in WebKit and Safari](https://developer.apple.com/videos/play/wwdc2015/501/)
 
 
+## 2014
 
-## [2014 206 Introducing the Modern WebKit API](https://developer.apple.com/videos/play/wwdc2014/206)
+### [2014 206 Introducing the Modern WebKit API](https://developer.apple.com/videos/play/wwdc2014/206)
 
 
 The modern WebKit framework enables developers to integrate web content into their native app experience with more features and fewer lines of code. Dive into the latest WebKit enhancements including modern Objective-C features such as blocks and explicit object types, advanced bridging between JavaScript and Objective-C, increased JavaScript performance via WebKit's super-fast JIT, and more—all delivered in an API unified for both iOS and OS X.
@@ -18,15 +52,3 @@ Taking advantage of new features of the WebKit API Customizing how your app inte
 2014-206-introducing-the-modern-webkit-api/readme.md
 
 
-
-## [2016 420 Optimizing Web Content in Your App]()
-
-
-
-## [2018 234 What’s New in Safari and WebKit](https://developer.apple.com/videos/play/wwdc2018/234/)
-
-[Note](2018-234-whats-new-in-safari-and-webkit)
-
-## [2018 207 Strategies for Securing Web Content](https://developer.apple.com/videos/play/wwdc2018/207/)
-
-[2018 239 Designing Web Content for watchOS](https://developer.apple.com/videos/play/wwdc2018/239)
