@@ -1,20 +1,17 @@
 ## [Laser-Fast Launches](3-laser-fast-launches.md)|2030|p84
 
-> [2017 413 App Startup Time: Past, Present, and Future](https://developer.apple.com/videos/play/wwdc2017/413)
-
-> [2016 406 Optimizing App Startup Time](https://developer.apple.com/videos/play/wwdc2016/406)
-
 
 
 Anatomy of a Launch
 
 
-• Process Forking
-• Dynamic Linking
-• UI Construction
-• First Frame
-• Extended Launch Actions
+- Process Forking
+- Dynamic Linking
+- UI Construction
+- First Frame
+- Extended Launch Actions
 
+### Process Forking
 
 ### Dynamic Linking
 
@@ -24,11 +21,18 @@ Anatomy of a Launch
 - Static object initialization
 - 40–50 percent of typical app launch time
 
+Advices
 
-Avoid code duplication
-Limit use of third-party libraries Avoid static initializers
+- Avoid code duplication
+- Limit use of third-party libraries
+- Avoid static initializers
 
 > App Startup Time—Past, Present, and Future WWDC 2017
+> [2017 413 App Startup Time: Past, Present, and Future](https://developer.apple.com/videos/play/wwdc2017/413)
+
+> [2016 406 Optimizing App Startup Time](https://developer.apple.com/videos/play/wwdc2016/406)
+
+
 
 ### UI Construction
 
@@ -38,7 +42,7 @@ Limit use of third-party libraries Avoid static initializers
 - Load model data
 
 
-
+Advices
 
 - Return quickly from
   - `application(_:willFinishLaunchingWithOptions:)`
@@ -54,10 +58,13 @@ Limit use of third-party libraries Avoid static initializers
 - Core Animation renders your first frame
 - Text drawing
 - Image loading and decompression
+
+Advices
+
 - Only prepare the UI you need
 - Avoid hiding views and layers
 
-Extended Launch Actions
+### Extended Launch Actions
 
 - Tasks deferred to post-launch
 - App is responsive, but not yet usable
