@@ -25,6 +25,8 @@
 
 ### Notification Collection
 
+like delta download. change token
+
 ### Dropped Notifications - It’s not just for airplane mode!
 
 - Always check the notification collection
