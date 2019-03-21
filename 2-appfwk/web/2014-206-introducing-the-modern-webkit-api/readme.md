@@ -14,6 +14,19 @@ The modern WebKit framework enables developers to integrate web content into the
 2014-206-introducing-the-modern-webkit-api/readme.md
 
 
+- Anders Carlsson, Safari and WebKit Engineer
+- Beth Dakin, Safari and WebKit Engineer
+
+TOC
+
+topic|speaker|time|page
+---|---|---|---
+[Adopting the Modern WebKit API](1-adapting-the-modern-webkit-api.md) | Anders Carlsson | 650 | 
+Demo - WKPedia (Mac)| Beth Dakin | 1545-2700 | p107
+[Customizing Webpage Content](3-customizing-webpage-content.md) | Anders Carlsson|2922
+[Demo - WKPedia for iPad](4-demo-wkpedia-ipad.md) | Beth Dakin | 3510 | p167
+
+
 ## The Modern WebKit API
 
 
@@ -35,79 +48,7 @@ Features
 
 Multi-process Architecture 
 
-Web content runs in its own process
-Consistently responsive
-Energy efficient
-
-
-
-## Adopting the Modern WebKit API | 650 | 
-
-
-### Creating a WKWebView
-
-WKWebView *webView = [[WKWebView alloc] initWithFrame:myFrame];
-
-
-###Loading a webpage
-
-NSURL *URL = [NSURL URLWithString:@"http://en.wikipedia.org/wiki"]; NSURLRequest *request = [NSURLRequest requestWithURL:URL]; 
-[webView loadRequest:request];
-
-
-### Configurations
-
-WKWebViewConfiguration *configuration =  [[WKWebViewConfiguration alloc] init];
-WKWebView *webView = [[WKWebView alloc] initWithFrame:myFrame  configuration:configuration];
-
-
-
-WKWebView Actions
-- goBack:
-- goForward:
-- reload:
-- stopLoading:
-
-
-WKWebView Properties
-
-Customizing Page Loading
-
-
-
-
-WKNavigationResponse
-Name Type
- response
-forMainFrame BOOL
-canShowMIMEType BOOL
-
-
-
-### Decision Handler
-
-- You decide whether to cancel or allow 
-- Navigation action
-    - WKNavigationActionPolicyCancel
-    - WKNavigationActionPolicyAllow
-- Navigation response
-    - WKNavigationResponsePolicyCancel
-    - WKNavigationResponsePolicyAllow
-- Asynchronous
-
-
-## Demo - WKPedia | Beth Dakin | 1545 | p107
-
-
-End of Demo | 2700
-
-Gestures
-Navigation Gestures
-webView.allowsBackForwardNavigationGestures = YES;
-
-
-Zoom Gestures
-OS X
-webView.allowsMagnification = YES;
-
+- Web content runs in its own process
+- Consistently responsive
+- Energy efficient
 
