@@ -3,12 +3,17 @@
 Metal Performance Shaders (MPS) provides a highly tuned library of functions that extend the power of the GPU for more than just graphics. With Metal 2, MPS comes to the Mac along with an expanded set of capabilities. Learn how to tap into the latest image processing operations, perform linear algebra operations, and accelerate machine learning algorithms via new primitives and a graph API to build and execute neural networks on the GPU.
 
 
-3924
+- Anna Tikhonova, GPU Software Engineer
+
+
+3924 | p207
+
+### Metal 2 Ecosystem
 
 - Metal API and language
 - GPU Tools
 - MetalKit
-- Metal Performance Shaders
+- __Metal Performance Shaders__
 
 ## Image Processing
 
@@ -25,43 +30,25 @@ Metal Performance Shaders (MPS) provides a highly tuned library of functions tha
 
 
 New primitives
-- Image Keypoints Bilinear Rescale Image Statistics
+- Image Keypoints
+- Bilinear Rescale
+- Image Statistics
 - Element-wise Arithmetic Operations
-- With broadcasting
-
-
-## [Linear Algebra](1-linear-algebra.md) | |
-
-
-## Machine Learning | 715 | p30
-
-
-Training and Inference
-
-
-- Recap on Convolutional Neural Networks (CNN)
-- Convolutional Neural Networks — New Primitives | 1320
-- Neural Network Graph API | 1930
-- Recurrent Neural Networks (RNN) | 2720
+  - With broadcasting
 
 
 
-## Recurrent Neural Networks (RNN)
+## [Linear Algebra](1-linear-algebra.md) | 250 | p9
 
-```swift
-// Example: Creating a LSTM RNN
-// Create a LSTM layer descriptor
-let descriptor = MPSLSTMDescriptor()
-descriptor.inputFeatureChannels = inputSize
-descriptor.outputFeatureChannels = outputSize
-// Create and initialize gate weights with trained parameters, using a data source provider
-// for just-in-time loading and purging of weights
-descriptor.forgetGateInputWeights = MyWeights(f
-descriptor.cellGateInputWeights = MyWeights(
-// Initialize the rest of the gates...
-ile:“forgetGateWeights.dat”)) file:“cellGateWeights.dat”))
-// Metal setup
-let device = MTLCreateSystemDefaultDevice()! // Also get commandQueue and commandBuffer
-// Create a LSTM layer
-let layer = MPSRNNMatrixInferenceLayer(device: device, rnnDescriptor: descriptor)
-```
+
+## [Machine Learning](2-machine-learning.md) | 710 | p30
+
+
+## Summary
+
+- GPU accelerated primitives
+  - Expanded support for Image Processing and Convolutional Neural Networks
+  - Added support for Linear Algebra and Recurrent Neural Networks
+- Optimized for iOS and macOS
+- New Neural Network Graph API
+
