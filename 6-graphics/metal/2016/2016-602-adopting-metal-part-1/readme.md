@@ -1,9 +1,11 @@
 
 
-# [602 Adopting Metal, Part 1](https://developer.apple.com/videos/play/wwdc2016/602/)
+# [2016 602 Adopting Metal, Part 1](https://developer.apple.com/videos/play/wwdc2016/602/)
 
 
-Metal provides the best access to the GPU on iOS, tvOS, and macOS, enabling you to maximize the graphics and compute potential of your apps and games. Get introduced to the essential concepts behind Metal, its low-overhead architecture, streamlined API, and support for efficient multi-threading. Start learning how to code with Metal in a walkthrough of rendering a basic scene.
+Metal provides the best access to the GPU on iOS, tvOS, and macOS, enabling you to maximize the graphics and compute potential of your apps and games. 
+
+Get introduced to the essential concepts behind Metal, its low-overhead architecture, streamlined API, and support for efficient multi-threading. Start learning how to code with Metal in a walkthrough of rendering a basic scene.
 
 
 
