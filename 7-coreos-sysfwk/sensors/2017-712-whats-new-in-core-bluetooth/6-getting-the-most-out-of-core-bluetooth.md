@@ -1,15 +1,15 @@
 
 
-## [Getting the Most out of Core Bluetooth](6-getting-the-most-out-of-core-bluetooth.md) | Duy Phan, Bluetooth Engineer | p91
-
-
+## [Getting the Most out of Core Bluetooth](6-getting-the-most-out-of-core-bluetooth.md) | Duy Phan |  | p91
 
 
 1MB = 3,240 seconds 2.5 kbps
 
-Protocol Overhead
+### Protocol Overhead
 
-Write With Response
+L2CAP (4 Bytes) + ATT (3 Bytes) + Attribute Data (20 Bytes)
+
+### Write With Response
 
 
 ### Write Without Response
@@ -18,7 +18,9 @@ Write With Response
 - Use all available connection events to transmit
 - Takes advantage of larger Connection Event Length
 
+Default MTU
 
+37 kbps
 
 ### Fitting your data
 
@@ -28,10 +30,10 @@ Write With Response
 
 ```swift
 open class CBPeripheral: CBPeer {
-open func maximumWriteValueLength(for type: CBCharacteristicWriteType) -> Int
+    open func maximumWriteValueLength(for type: CBCharacteristicWriteType) -> Int
 }
 open class CBCentral: CBPeer {
-open var maximumUpdateValueLength: Int { get }
+    open var maximumUpdateValueLength: Int { get }
 }
 ```
 
@@ -46,6 +48,11 @@ open var maximumUpdateValueLength: Int { get }
 - 4x throughput with the same radio time
 - Available on iPhone 7 and Apple Watch Series 2
 
+### L2CAP Connection Oriented Channels
+
+197 kbps
+
+L2CAP (4 Bytes) + Attribute Data (147 Bytes)
 
 ### Faster Connection Interval
 
@@ -54,7 +61,19 @@ L2CAP + EDL
 394 kbps
 
 
-Throughput (kbps)
+
+### Throughput (kbps)
+
+X|Y
+---|---
+Write With Response|2.5
+Write Without Response|5.2
+Packed CE Length, Default MTU|37
+Larger MTU|48
+EDL|135
+L2CAP + EDL|197 
+L2CAP + EDL + 15ms Int|394
+
 
 ### Summary
 
