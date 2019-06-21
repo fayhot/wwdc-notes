@@ -1,13 +1,14 @@
-## [Animation Enhancement](2017-604-3-animation-improvements.md) |Amaury Balliet | 3400 | p121
+## [Animation Enhancement](2017-604-3-animation-improvements.md) |Amaury Balliet | 3400-3650 | p121
 
 [API](https://developer.apple.com/documentation/scenekit/animation)
 
 
 
-SCNAnimation
+class [`SCNAnimation`](https://developer.apple.com/documentation/scenekit/scnanimation) : NSObject
 
-SCNAnimationPlayer
+class [`SCNAnimationPlayer`](https://developer.apple.com/documentation/scenekit/scnanimationplayer) : NSObject
 
+protocol [`SCNAnimationProtocol`](https://developer.apple.com/documentation/scenekit/scnanimationprotocol)
 
 
 - Introducing SCNAnimation and SCNAnimationPlayer
@@ -37,7 +38,7 @@ character.addAnimation(jumpAnimation, forKey: "jump")
 
 ```swift
 // configure the players
-character.addAnimationPlayer(walkAnimationPlayer, forKey: "walk") 
+character.addAnimationPlayer(walkAnimationPlayer, forKey: "walk")
 character.addAnimationPlayer(jumpAnimationPlayer, forKey: "jump")
  
  
@@ -59,6 +60,7 @@ runAnimationPlayer.blendFactor = walkRunFactor
 
 ### Animation blending
 
+Step, Walk, Run
 
 ### Performance
 

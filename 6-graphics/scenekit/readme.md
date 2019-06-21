@@ -17,3 +17,8 @@ Year/iOS|features|tools|more
 2015/9|metal adoption
 2014/8|intro to iOS
 2013/?|intro to macOS?
+
+
+[2014 609 What's New in SceneKit](https://developer.apple.com/videos/play/wwdc2014/609/)
+
+[2013 500 What's New in Scene Kit](https://developer.apple.com/videos/play/wwdc2013/500/)
