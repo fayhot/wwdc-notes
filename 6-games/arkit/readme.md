@@ -10,6 +10,15 @@ Year/iOS|Video|Note
 2017Fall/11.1?|[2017Fall 601 Face Tracking with ARKit](https://developer.apple.com/videos/play/fall2017/601/)|[Note](2017fall-601-face-tracking-with-arkit)
 2017/11|[2017 602 Introducing ARKit: Augmented Reality for iOS](https://developer.apple.com/videos/play/wwdc2017/602/)|[Note](2017-602-introducing-arkit-augmented-reality-for-ios)
 
+## 2017 / iOS 11
+
+[`ARFaceTrackingConfiguration`](https://developer.apple.com/documentation/arkit/arfacetrackingconfiguration)
+
+
+[`ARPointCloud`](https://developer.apple.com/documentation/arkit/arpointcloud)
+
+[`ARFaceAnchor`](https://developer.apple.com/documentation/arkit/arfaceanchor)
+
 
 ## 2018
 
@@ -20,5 +29,32 @@ Year/iOS|Video|Note
 - [2018 610 Understanding ARKit Tracking and Detection](https://developer.apple.com/videos/play/wwdc2018/610/)
 
 
-## API
+### API (iOS 12)
 
+
+[`ARWorldMap`](https://developer.apple.com/documentation/arkit/arworldmap)
+
+
+## 2019
+
+
+- [2019 604 Introducing ARKit 3](https://developer.apple.com/videos/play/wwdc2019/604/)
+- [2019 607 Bringing People into AR](https://developer.apple.com/videos/play/wwdc2019/607)
+- [2019 610 Building Collaborative AR Experiences](https://developer.apple.com/videos/play/wwdc2019/610)
+
+
+[`ARCoachingOverlayView`](https://developer.apple.com/documentation/arkit/arcoachingoverlayview)
+
+
+
+[`ARBodyTrackingConfiguration`](https://developer.apple.com/documentation/arkit/arbodytrackingconfiguration)
+
+
+[`ARBodyAnchor`](https://developer.apple.com/documentation/arkit/arbodyanchor)
+
+
+[`ARPositionalTrackingConfiguration`](https://developer.apple.com/documentation/arkit/arpositionaltrackingconfiguration)
+
+
+
+[`ARMatteGenerator`](https://developer.apple.com/documentation/arkit/armattegenerator)

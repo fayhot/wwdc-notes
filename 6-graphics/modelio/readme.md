@@ -10,3 +10,10 @@ Year| Session | Video | Note
 ### Extra Downloads :
 
 2017 : [ModelIO from MDLAsset to Game Engine]() Source code/ Xcode workspace - as demo in the session
+
+
+
+## 2019 
+
+-  [2019 602 Working with USD](https://developer.apple.com/videos/play/wwdc2019/602)
+- [2019 612 Advances in AR Quick Look](https://developer.apple.com/videos/play/wwdc2019/612)
