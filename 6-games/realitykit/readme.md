@@ -23,6 +23,7 @@ class [`BodyTrackedEntity`](https://developer.apple.com/documentation/realitykit
 [`DirectionalLight`](https://developer.apple.com/documentation/realitykit/directionallight)|[`HasDirectionalLight`](https://developer.apple.com/documentation/realitykit/hasdirectionallight)
 [`PerspectiveCamera`](https://developer.apple.com/documentation/realitykit/perspectivecamera)|[`HasPerspectiveCamera`](https://developer.apple.com/documentation/realitykit/hasperspectivecamera)
 
+
 ## Has-protocols
 
 protocol | underlying type, [`Component`](https://developer.apple.com/documentation/realitykit/component)
@@ -32,16 +33,19 @@ protocol | underlying type, [`Component`](https://developer.apple.com/documentat
 [`HasSpotLight`](https://developer.apple.com/documentation/realitykit/hasspotlight)|[`SpotLightComponent`](https://developer.apple.com/documentation/realitykit/spotlightcomponent)<br/>[`SpotLightComponent.Shadow`](https://developer.apple.com/documentation/realitykit/spotlightcomponent/shadow)
 [`HasDirectionalLight`](https://developer.apple.com/documentation/realitykit/hasdirectionallight)|[`DirectionalLightComponent`](https://developer.apple.com/documentation/realitykit/directionallightcomponent)<br/>[`DirectionalLightComponent.Shadow`](https://developer.apple.com/documentation/realitykit/directionallightcomponent/shadow)
 [`HasPerspectiveCamera`](https://developer.apple.com/documentation/realitykit/hasperspectivecamera)|[`PerspectiveCameraComponent`](https://developer.apple.com/documentation/realitykit/perspectivecameracomponent)
+[`HasCollision`](https://developer.apple.com/documentation/realitykit/hascollision)|[`CollisionComponent`](https://developer.apple.com/documentation/realitykit/collisioncomponent)
+[`HasPhysicsBody`](https://developer.apple.com/documentation/realitykit/hasphysicsbody)|[`PhysicsBodyComponent`](https://developer.apple.com/documentation/realitykit/physicsbodycomponent)
+[`HasPhysicsMotion`](https://developer.apple.com/documentation/realitykit/hasphysicsmotion)|[`PhysicsMotionComponent`](https://developer.apple.com/documentation/realitykit/physicsmotioncomponent)
+
 
 
 ## protocol [`Resource`](https://developer.apple.com/documentation/realitykit/resource) and its followers
 
-```
-AnimationResource
-AudioResource
-EnvironmentResource
-MeshResource
-PhysicsMaterialResource
-ShapeResource
-TextureResource
-```
+
+[`AnimationResource`](https://developer.apple.com/documentation/realitykit/animationresource)  - [`AnimationPlaybackController`](https://developer.apple.com/documentation/realitykit/animationplaybackcontroller)
+[`AudioResource`](https://developer.apple.com/documentation/realitykit/audioresource) - [`AudioPlaybackController`](https://developer.apple.com/documentation/realitykit/audioplaybackcontroller)
+[`EnvironmentResource`](https://developer.apple.com/documentation/realitykit/environmentresource)
+[`MeshResource`](https://developer.apple.com/documentation/realitykit/meshresource)
+[`PhysicsMaterialResource`](https://developer.apple.com/documentation/realitykit/physicsmaterialresource)
+[`ShapeResource`](https://developer.apple.com/documentation/realitykit/shaperesource)
+[`TextureResource`](https://developer.apple.com/documentation/realitykit/textureresource)
