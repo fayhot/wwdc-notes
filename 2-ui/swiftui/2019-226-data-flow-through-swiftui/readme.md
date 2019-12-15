@@ -2,23 +2,41 @@
 # [2019 226 Data Flow Through SwiftUI](https://developer.apple.com//videos/play/wwdc2019/226/)
 
 
+Ref : [SwiftUI / State and Data Flow](https://developer.apple.com/documentation/swiftui/state_and_data_flow)
 
-Principles of Data Flow
+TOC
 
-Anatomy of an Update
+Topic|x
+--|--
+Principles of Data Flow|
+Anatomy of an Update|
+Understanding Your Data|
 
-Understanding Your Data
+
 
 
 Tools for Data Flow
 
-@Environment @Binding @State Property BindableObject
+Tool|Good for|Client note|Service note
+--|--|--|--
+@Environment|
+@Binding|
+@State|
+Property|
+BindableObject|
 
-Principle 1: Data Access as a Dependency
 
-Principle 2: Sources of Truth
+### Principle 1: Data Access as a Dependency
+
+
+
+### Principle 2: Sources of Truth
 
 Duplicated Source of Truth - problem.. inconsistency - vs Single Source of Truth.
+
+
+### Example: Player on Watch
+
 
 
 
@@ -60,3 +78,4 @@ Next Steps
 - Minimze Source of Truth
 - Understand your data
 - Build a great app!
+
