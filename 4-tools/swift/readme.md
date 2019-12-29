@@ -1,5 +1,14 @@
 
 
+2019
+
+2019 402 What's New in Swift
+
+
+[2019 415 Modern Swift API Design](https://developer.apple.com//videos/play/wwdc2019/415/)
+
+
+
 2016
 
 
@@ -8,3 +17,8 @@
 [2016 402 What's New in Swift](https://developer.apple.com/videos/play/wwdc2016/402/)
 
 [2017 402 What's New in Swift](https://developer.apple.com/videos/play/wwdc2017/402/)
+
+
+
+
+

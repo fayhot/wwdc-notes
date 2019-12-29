@@ -8,14 +8,14 @@ TOC
 
 Topic|x
 --|--
-Principles of Data Flow|
+Principles of Data Flow|(2)
 Anatomy of an Update|
-Understanding Your Data|
+Understanding Your Data - intuition|
 
 
 
 
-Tools for Data Flow
+### Tools for Data Flow
 
 Tool|Good for|Client note|Service note
 --|--|--|--
@@ -34,48 +34,9 @@ BindableObject|
 
 Duplicated Source of Truth - problem.. inconsistency - vs Single Source of Truth.
 
-
-### Example: Player on Watch
-
+## [Example: PodcastPlayer on Watch](1-example-podcastplayer-on-watch.md) [4:32]
 
 
+## [Working with external data](working-with-external-data.md)
 
-BindableObject
-
-### Creating Dependencies on BindableObject
-
-@ObjectBinding
-
-### Indirect Dependencies
-
-@EnvironmentObject
-
-
-### Environment
-
-- Data applicable to an entire hierarchy
-- Convenience for indirection
-- Accent color, right-to-left, and more
-
-
-Sources of Truth
-
-X|@State|BindableObject
----|---|---
-x|View-Model|Extneral
-x|Value|Reference
-x|Framework Managed|Developer Managed
-
-### Building Reuseable Components
-
-Read-only: Swift property, Environment
-: @Binding
-: @State - Use derived Binding or value
-
-
-Next Steps
-
-- Minimze Source of Truth
-- Understand your data
-- Build a great app!
 
