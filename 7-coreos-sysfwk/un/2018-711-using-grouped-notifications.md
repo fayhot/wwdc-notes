@@ -4,6 +4,16 @@
 2018-711-using-grouped-notifications.md
 
 
+Michele Campeotto, iOS User Notifications
+
+```
+• Notification groups
+• App grouping
+• Custom grouping
+• Group summaries
+```
+
+
 
 # [2018 806 Designing Notifications](https://developer.apple.com/videos/play/wwdc2018/806)
 

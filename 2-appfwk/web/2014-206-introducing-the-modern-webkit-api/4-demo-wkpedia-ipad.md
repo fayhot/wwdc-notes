@@ -5,7 +5,8 @@
 
 ```js
 var styleELement = document.createElement('style');
-document.documentElement.appendChild(styleELement);styleELement.textContent = '.toc { display : none !important;} #mw-panel {display: none !important!} #content {margin : 0px 10px 0px 10px !important;};';
+document.documentElement.appendChild(styleELement);
+styleELement.textContent = '.toc { display : none !important;} #mw-panel {display: none !important!} #content {margin : 0px 10px 0px 10px !important;};';
 ```
 
 
