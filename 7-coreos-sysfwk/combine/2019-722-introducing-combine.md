@@ -5,27 +5,29 @@
 A unified, declarative API for   processing values over time
 
 
-Combine Features
+### Combine Features
 
 Generic / Type safe / Composition first / Request driven
 
-Key Concepts
+### Key Concepts
 
 Publishers / Subscribers / Operators
 
 
-Publisher
+### Publisher
 
 - Defines how values and errors are produced
 - Value type
 - Allows registration of a Subscriber
 
 
-Subscriber
-Receives values and a completion Reference type
+### Subscriber
+
+- Receives values and a completion
+- Reference type
 
 
-The Pattern
+### The Pattern
 
 - Subscriber is attached to Publisher
 - Publisher sends a Subscription
@@ -33,7 +35,7 @@ The Pattern
 - Publisher sends N values or less
 - Publisher sends completion
 
-Operator
+### Operator
 
 
 - Adopts Publisher
@@ -43,7 +45,7 @@ Operator
 - Value type
 
 
-Declarative Operator API
+### Declarative Operator API
 
 - Functional transformations
 - List operations
@@ -64,14 +66,14 @@ Many|Array|Publisher
 
 
 
-Zip
+### Zip
 
 - Converts several inputs into a single tuple
 - A “when/and” operation
 - Requires input from all to proceed
 
 
-Combine Latest
+### Combine Latest
 
 - Converts several inputs into a single value
 - A “when/or” operation
@@ -79,14 +81,14 @@ Combine Latest
 - Stores last value
 
 
-Try It
+### Try It
 
 - Process a NotificationCenter post with filter
 - Await completion of two network requests with zip
 - decode the data of a URLResponse
 
 
-More to Combine
+### More to Combine
 
 - Error handling and cancellation
 - Schedulers and time
