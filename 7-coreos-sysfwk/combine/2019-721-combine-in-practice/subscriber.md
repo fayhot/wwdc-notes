@@ -14,7 +14,6 @@ protocol Subscriber {
 ```
 
 
-
 ### Kinds of Subscribers
 
 ```
@@ -39,7 +38,7 @@ final class AnyCancellable: Cancellable {} // Calls `cancel` on deinit
 
 
 
-Subjects
+### 3. Subjects
 
 - Behave like both Publisher and Subscriber
 - Broadcast values to multiple subscribers
@@ -51,8 +50,10 @@ protocol Subject: Publisher, AnyObject {
 }
 ```
 
+### 4. Combine with SwiftUI
+
 ```swift
-// Combine with SwiftUI
+
 class WizardModel : BindableObject {
     var trick: WizardTrick { didSet { didChange.send() }
     var wand: Wand? { didSet { didChange.send() }
@@ -75,15 +76,3 @@ struct TrickView: View {
 
 Refs
 
-protocol [Subscriber](https://developer.apple.com/documentation/combine/subscriber)
-
-enum [Subscribers](https://developer.apple.com/documentation/combine/subscribers)
-
-
-type|description
---|--
-class [`Subscribers.Sink`](https://developer.apple.com/documentation/combine/subscribers/sink)|A simple subscriber that requests an unlimited number of values upon subscription.
-class [`Subscribers.Assign`](https://developer.apple.com/documentation/combine/subscribers/assign)|A simple subscriber that assigns received elements to a property indicated by a key path.
-
-
-@frozen struct [`AnySubscriber`](https://developer.apple.com/documentation/combine/anysubscriber) `<Input, Failure>` where Failure : Error

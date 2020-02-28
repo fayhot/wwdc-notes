@@ -45,11 +45,4 @@ Combine
 
 
 
-
-## Integrating Combine
-
-- Ben D. Jones, Foundation
-
-
-
-
+## [Integrating Combine](integrating.md) 22:50
