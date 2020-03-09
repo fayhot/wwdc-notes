@@ -3,6 +3,7 @@
 
 Year/iOS| Session | Note
 --|--|--
+2019/13|[2019 704 Core ML 3 Framework](https://developer.apple.com/videos/play/wwdc2019/704)
 2018/12|[2018 712 A Guide to Turi Create](https://developer.apple.com/videos/play/wwdc2018/712)|[Note](2018-712-a-guide-to-turi-create)
 2017/11|[2017 703 Introducing Core ML](https://developer.apple.com/videos/play/wwdc2017/703/)| [Note](2017-703-introducing-core-ml)
 2017/11|[2017 710 Core ML in depth](https://developer.apple.com/videos/play/wwdc2017/710/)|[Note](2017-710-core-ml-in-depth)
