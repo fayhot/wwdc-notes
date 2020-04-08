@@ -2,10 +2,11 @@
 
 
 WWDC
-
-- [2019 603 Introducing RealityKit and Reality Composer](https://developer.apple.com/videos/play/wwdc2019/603)
-- [2019 605 Building Apps with RealityKit](https://developer.apple.com/videos/play/wwdc2019/605)
-- [2019 609 Building AR Experiences with Reality Composer](https://developer.apple.com/videos/play/wwdc2019/609)
+Session|x
+--|--
+[2019 603 Introducing RealityKit and Reality Composer](https://developer.apple.com/videos/play/wwdc2019/603)|[Note](2019-603-introducing-realitykit-and-reality-composer.md)
+[2019 605 Building Apps with RealityKit](https://developer.apple.com/videos/play/wwdc2019/605)|
+[2019 609 Building AR Experiences with Reality Composer](https://developer.apple.com/videos/play/wwdc2019/609)|
 
 
 
