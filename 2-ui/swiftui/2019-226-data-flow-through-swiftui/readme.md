@@ -17,13 +17,14 @@ Understanding Your Data - intuition|
 
 ### Tools for Data Flow
 
-Tool|Good for|Client note|Service note
---|--|--|--
-@Environment|
-@Binding|
-@State|
-Property|
-BindableObject|
+Tool|Good for|Client note|Service (view in topic) note|model
+--|--|--|--|--
+Property|static
+@State|view private
+@Binding|communicate with parent view||
+Publisher|example: timer|
+ObservableObject<br/>~BindableObject~|||Store
+@Environment|Creating indirect dependencies|
 
 
 ### Principle 1: Data Access as a Dependency

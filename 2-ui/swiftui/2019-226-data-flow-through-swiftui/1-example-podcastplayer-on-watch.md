@@ -21,8 +21,21 @@ struct PlayerView : View {
 ```
 
 
+### @State Property Wrapper
 
-Abstract a PlayButton out
+
+### Anatomy of a View Update
+
+
+Every @State is a source of truth.
+
+Views are a function of state, not of sequence of events.
+
+![](19-226-circle.png)
+
+
+
+#### Abstract a PlayButton out (12:30-)
 
 
 ```swift
@@ -40,24 +53,14 @@ struct PlayButton : View {
 
 
 
-
-
-
-
-
-
-
-
-
-
-@Binding Property Wrapper
+### @Binding Property Wrapper (13:00-)
 
 - read and write without ownership
-- Derivable from @State ? 
+- Derivable from @State (of this view's parent.)
 
 Really? You don't need ViewController any more?
 
-Example of built-in Views to using Binding
+Example of built-in Views to using Binding (15:50-)
 
 - Toggle - Bool
 - TextField - String
@@ -65,6 +68,7 @@ Example of built-in Views to using Binding
 
 
 ```swift
+// Animated Changes
 Button(action: {
     withAnimation { self.isPlaying.toggle() }
 }){

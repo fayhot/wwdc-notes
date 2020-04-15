@@ -4,11 +4,12 @@
 
 ### Layout Basics
 
+See [Apple Dev Doc: View Layout](https://developer.apple.com/documentation/swiftui/view/layout)
 
 ### Layout Procedure
 
 
-1. Parentproposesasizeforchild
+1. Parent proposes a size for child
 2. Child chooses its own size
 3. Parent places child in parent’s coordinate space
 4. SwiftUI rounds coordinates to nearest pixel

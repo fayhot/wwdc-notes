@@ -3,7 +3,7 @@
 
 Year/iOS| Session | Note
 --|--|--
-2019/13|[2019 704 Core ML 3 Framework](https://developer.apple.com/videos/play/wwdc2019/704)
+2019/13|[2019 704 Core ML 3 Framework](https://developer.apple.com/videos/play/wwdc2019/704)|[Note](2019-704-core-ml-3-framework) 
 19|[2019 420 Drawing Classification and One-Shot Object Detection in Turi Create](https://developer.apple.com/videos/play/wwdc2019/420)
 2018/12|[2018 712 A Guide to Turi Create](https://developer.apple.com/videos/play/wwdc2018/712)|[Note](2018-712-a-guide-to-turi-create)
 2017/11|[2017 703 Introducing Core ML](https://developer.apple.com/videos/play/wwdc2017/703/)| [Note](2017-703-introducing-core-ml)
