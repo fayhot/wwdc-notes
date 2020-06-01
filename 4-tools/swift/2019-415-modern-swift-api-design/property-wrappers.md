@@ -1,6 +1,6 @@
 
 •Property Wrappers
-• Swift Evolution: SE-0258
+• Swift Evolution: [SE-0258](https://github.com/apple/swift-evolution/blob/master/proposals/0258-property-wrappers.md)
 
 
 lazy var - is one instance of general pattern
