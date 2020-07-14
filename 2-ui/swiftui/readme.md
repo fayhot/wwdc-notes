@@ -1,4 +1,4 @@
-# SwiftUI 
+## [SwiftUI](https://developer.apple.com/documentation/swiftui)
 
 (since iOS 13, Swift 5.1, Xcode 11.0+)
 
@@ -16,6 +16,18 @@ Session|Note
 [2019 219 SwiftUI on watchOS](https://developer.apple.com//videos/play/wwdc2019/219/)|
 
 
-Framework [SwiftUI](https://developer.apple.com/documentation/swiftui)
 
+2020 iOS 14, Xcode 12
 
+Session|Note
+--|--
+[2020 10119 Introduction to SwiftUI](https://developer.apple.com/videos/play/wwdc2020/10119)|
+[2020 10031 Stacks, Grids, and Outlines in SwiftUI](https://developer.apple.com/videos/play/wwdc2020/10031)|
+[2020 10037 App essentials in SwiftUI](https://developer.apple.com/videos/play/wwdc2020/10037)|
+[2020 10039 Build document-based apps in SwiftUI](https://developer.apple.com/videos/play/wwdc2020/10039)|
+[2020 10040 Data Essentials in SwiftUI](https://developer.apple.com/videos/play/wwdc2020/10040)|
+[2020 10041 What's new in SwiftUI](https://developer.apple.com/videos/play/wwdc2020/10041)|
+[2020 10042 Build SwiftUI apps for tvOS](https://developer.apple.com/videos/play/wwdc2020/10042)|
+[2020 10149 Structure your app for SwiftUI previews](https://developer.apple.com/videos/play/wwdc2020/10149)|
+[2020 10185 Visually edit SwiftUI views](https://developer.apple.com/videos/play/wwdc2020/10185)|Xcode
+[2020 10649 Add custom views and modifiers to the Xcode Library](https://developer.apple.com/videos/play/wwdc2020/10649)|

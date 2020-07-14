@@ -1,5 +1,7 @@
 
 
+[020 10165 Embrace Swift type inference](https://developer.apple.com/videos/play/wwdc2020/10165)
+
 2019
 
 
